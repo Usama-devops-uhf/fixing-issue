@@ -1,0 +1,9 @@
+> If AWS EC2 instance not wworking / like unable to connect via internet steps to debug 
+
+  check disk space : df -h 
+  sudo nano /etc/resolv.conf > check the Namespace resolution . 
+
+ Most imp > check network status from below command 
+    sudo systemctl status systemd-resolved
+    sudo systemctl restart networking
+    wget www.google.com
